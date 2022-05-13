@@ -20,6 +20,8 @@ Route::get('/about', 'App\Http\Controllers\PagesController@about');
 
 Route::get('/services', 'App\Http\Controllers\PagesController@services');
 
+Route::get('/upload', 'App\Http\Controllers\PagesController@upload');
+
 Route::get('/service/{id}', function ($id) {
     return view('pages.service', [
         'service' => Service::find($id)

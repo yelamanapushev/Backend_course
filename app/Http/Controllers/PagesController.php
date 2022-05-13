@@ -18,6 +18,11 @@ class PagesController extends Controller
         return view('pages.about');
     }
 
+    public function upload()
+    {
+        return view('pages.upload');
+    }
+
     public function services()
     {
         $data = [
